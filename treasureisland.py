@@ -21,24 +21,24 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 *******************************************************************************
 ''')
 print("Welcome to Treasure Island.")
-print("Your mission is to find the treasure.")
+print("Your mission is to find the treasure.") 
 
 #Write your code below this line 👇
-
-choice1 = input('You\'re at a cross road. Where do you want to go? Type "left" or "right" \n').lower()
-if choice1 == "left":
-  choice2 = input('You\'ve come to a lake. There is an island in the middle of the lake. Type "wait" to wait for a boat. Type "swim" to swim across. \n').lower()
-  if choice2 == "wait":
-    choice3 = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose? \n").lower()
-    if choice3 == "red":
-      print("It's a room full of fire. Game Over.")
-    elif choice3 == "yellow":
-      print("You found the treasure! You Win!")
-    elif choice3 == "blue":
-      print("You enter a room of beasts. Game Over.")
+first_choice = (input("The Treasure Hunt has started choose your path Type  left or right:\n")).lower()
+if first_choice == "left":
+  second_choice = (input("There is a river in front of you, do you want Swim or wait? type wait if you choose to wait for a ferry  or swim\n")).lower()
+  if second_choice == "wait":
+    third_choice = (input("On arriving on the the island there are three doors Red ,Blue,yellow, choose  which door? type the color\n")).lower()
+    if third_choice == "red":
+        print("It's a room full of fire. Game Over.")
+    elif third_choice == "yellow":
+        print("You found the treasure! You Win!")
+    elif third_choice == "blue":
+        print("You enter a room of beasts. Game Over.")
     else:
-      print("You chose a door that doesn't exist. Game Over.")
+        print("You chose a door that doesn't exist. Game Over.")
   else:
-    print("You get attacked by an angry trout. Game Over.")
+        print("You get attacked by an angry trout. Game Over.")
 else:
   print("You fell into a hole. Game Over.")
+
