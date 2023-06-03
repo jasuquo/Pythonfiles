@@ -23,7 +23,7 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.") 
 
-#Write your code below this line 👇
+
 first_choice = (input("The Treasure Hunt has started choose your path Type  left or right:\n")).lower()
 if first_choice == "left":
   second_choice = (input("There is a river in front of you, do you want Swim or wait? type wait if you choose to wait for a ferry  or swim\n")).lower()
